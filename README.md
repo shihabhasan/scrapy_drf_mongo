@@ -44,7 +44,7 @@ bbc.shihabhasan.com/n={number}. Provide the number to get the article.
 bbc.shihabhasan.com/n=2
 
 ## Running BBC Spider
-cd to 'scrapy_app' directory then run the command: 'spider crawl bbc' or 'spider crawl bbc -o bbc.json'
+cd to 'scrapy_app' directory then run the command: 'scrapy crawl bbc' or 'scrapy crawl bbc -o bbc.json'
 
 
 ## Enjoy the software!
