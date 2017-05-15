@@ -38,10 +38,14 @@ bbc.shihabhasan.com/heading={heading}. Provide the heading to get the article.
 bbc.shihabhasan.com/heading=Australian top IS recruiter Neil Prakash 'to be extradited'
 
 ### Getting individual article by number.
-bbc.shihabhasan.com/n={number}. Provide the number to get thearticle.
+bbc.shihabhasan.com/n={number}. Provide the number to get the article.
 
 #### Example:
 bbc.shihabhasan.com/n=2
+
+## Running BBC Spider
+cd to 'scrapy_app' directory then run the command: 'spider crawl bbc' or 'spider crawl bbc -o bbc.json'
+
 
 ## Enjoy the software!
 
