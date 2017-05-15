@@ -6,14 +6,5 @@ class ScrapyItemsSerializer(serializers.DocumentSerializer):
         model = ScrapyItems
         fields = ['article_title', 'article_tag', 'article_heading', 'article_text', 'article_url']
 
-class ArticleTitleSerializer(serializers.DocumentSerializer):
-    class Meta:
-        model = ScrapyItems
-        fields = ['article_title']
-
-class ArticleHeadingSerializer(serializers.DocumentSerializer):
-    class Meta:
-        model = ScrapyItems
-        fields = ['article_heading']
 
 

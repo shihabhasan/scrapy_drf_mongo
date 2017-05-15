@@ -16,15 +16,21 @@ class BbcApiView(APIView):
 
 class TitleApiView(APIView):
     def get(self, request):
-        all_titles = ScrapyItems.objects.all()
-        serializer = ArticleTitleSerializer(all_titles, many=True)
-        return Response(serializer.data)
+        all_titles = ScrapyItems.objects.values_list('article_title')
+        titleList=[]
+        for title in all_titles:
+            titleList.append(title)
+        context = {"article_title": titleList}
+        return Response(context)
 
 class HeadingApiView(APIView):
     def get(self, request):
-        all_titles = ScrapyItems.objects.all()
-        serializer = ArticleHeadingSerializer(all_titles, many=True)
-        return Response(serializer.data)
+        all_heading = ScrapyItems.objects.values_list('article_heading')
+        headingList=[]
+        for heading in all_heading:
+            headingList.append(heading)
+        context = {"article_heading": headingList}
+        return Response(context)
 
 class TagApiView(APIView):
     def get(self, request):
@@ -33,14 +39,13 @@ class TagApiView(APIView):
         for tag in all_tags:
             if tag not in tagList:
                 tagList.append(tag)
-
         context={"article_tag": tagList}
         return Response(context)
 
 class ArticleApiView(APIView):
     def get(self, request, n):
-        all_tags = ScrapyItems.objects.all()
-        serializer = ScrapyItemsSerializer(all_tags, many=True)
+        all_items = ScrapyItems.objects.all()
+        serializer = ScrapyItemsSerializer(all_items, many=True)
         return Response(serializer.data[int(n)])
 
 class TagDetailsApiView(APIView):
