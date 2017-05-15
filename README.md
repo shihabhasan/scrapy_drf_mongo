@@ -2,8 +2,8 @@
 
 The homepage shows all the scrapped data using the API.
 
-## Data & Source Code
-The source codes of BBCscrapping can be found on [GitHub](https://github.com/shihabhasan/scrapy_drf_mongo).
+## API Sever & Source Code
+The API server can be access at bbc.shihabhasan.com. The source codes of BBCscrapping can be found on [GitHub](https://github.com/shihabhasan/scrapy_drf_mongo).
 
 ## API
 The API homepage of BBCscrapping can be found on bbc.shihabhasan.com. API has been built by Django REST Framework.
