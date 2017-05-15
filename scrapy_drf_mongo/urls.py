@@ -28,7 +28,7 @@ urlpatterns = [
     url(r'^heading$', views.HeadingApiView.as_view()),
     url(r'^tag$', views.TagApiView.as_view()),
     url(r'^n=(?P<n>[0-9]+)$', views.ArticleApiView.as_view()),
-    url(r'^tag=(?P<tag_name>[A-Za-z-\w\ ]+)$', views.TagDetailsApiView.as_view()),
+    url(r'^tag=(?P<tag_name>.*)$', views.TagDetailsApiView.as_view()),
     url(r'^title=(?P<title>.*)$', views.TitleDetailsApiView.as_view()),
     url(r'^heading=(?P<heading>.*)$', views.HeadingDetailsApiView.as_view()),
 ]
