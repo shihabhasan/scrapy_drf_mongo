@@ -28,9 +28,14 @@ class HeadingApiView(APIView):
 
 class TagApiView(APIView):
     def get(self, request):
-        all_tags = ScrapyItems.objects.all()
-        serializer = ArticleTagSerializer(all_tags, many=True)
-        return Response(serializer.data)
+        all_tags = ScrapyItems.objects.values_list('article_tag')
+        tagList=[]
+        for tag in all_tags:
+            if tag not in tagList:
+                tagList.append(tag)
+
+        context={"article_tag": tagList}
+        return Response(context)
 
 class ArticleApiView(APIView):
     def get(self, request, n):
