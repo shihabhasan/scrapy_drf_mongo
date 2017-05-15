@@ -46,7 +46,7 @@ class ArticleApiView(APIView):
     def get(self, request, n):
         all_items = ScrapyItems.objects.all()
         serializer = ScrapyItemsSerializer(all_items, many=True)
-        return Response(serializer.data[int(n)+1])
+        return Response(serializer.data[int(n)-1])
 
 class TagDetailsApiView(APIView):
     def get(self, request, tag_name):
