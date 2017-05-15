@@ -44,9 +44,17 @@ class TagApiView(APIView):
 
 class ArticleApiView(APIView):
     def get(self, request, n):
+        n=int(n)
         all_items = ScrapyItems.objects.all()
         serializer = ScrapyItemsSerializer(all_items, many=True)
-        return Response(serializer.data[int(n)-1])
+        if n>0 and n< len(all_items):
+            return Response(serializer.data[n-1])
+        if n<1:
+            context={'Input Error': 'Provide provide positive integer value'}
+            return Response(context)
+        if n>(len(all_items)-1):
+            context = {'Input Error': 'There are '+str(len(all_items)-1)+' articles. Please provide lower value than '+str(len(all_items)-1) }
+            return Response(context)
 
 class TagDetailsApiView(APIView):
     def get(self, request, tag_name):
