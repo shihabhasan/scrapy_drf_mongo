@@ -53,7 +53,7 @@ class ArticleApiView(APIView):
             context={'Input Error': 'Provide provide positive integer value'}
             return Response(context)
         if n>(len(all_items)-1):
-            context = {'Input Error': 'There are '+str(len(all_items)-1)+' articles. Please provide lower value than '+str(len(all_items)-1) }
+            context = {'Input Error': 'There are '+str(len(all_items)-1)+' articles. Maximum input value is '+str(len(all_items)-1) }
             return Response(context)
 
 class TagDetailsApiView(APIView):

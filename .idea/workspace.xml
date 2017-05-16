@@ -20,8 +20,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+            <state relative-caret-position="221">
+              <caret line="55" column="107" lean-forward="false" selection-start-line="55" selection-start-column="107" selection-end-line="55" selection-end-column="107" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -812,8 +812,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/django_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+        <state relative-caret-position="221">
+          <caret line="55" column="107" lean-forward="false" selection-start-line="55" selection-start-column="107" selection-end-line="55" selection-end-column="107" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
