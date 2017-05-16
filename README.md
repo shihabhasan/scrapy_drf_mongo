@@ -22,20 +22,20 @@ bbc.shihabhasan.com/tag={tag name}. Provide the tag name to get the list of arti
 
 #### Example:
 1. bbc.shihabhasan.com/tag=Australia
-2. bbc.shihabhasan.com/tag=Latin America & Caribbean
+2. bbc.shihabhasan.com/tag=Science & Environment
 
 
 ### Getting individual article by title.
 bbc.shihabhasan.com/title={title}. Provide the title to get the article.
 
 #### Example:
-bbc.shihabhasan.com/title=Trump urged to hand over any Comey tapes
+bbc.shihabhasan.com/title=Troubled Toshiba misses results deadline
 
 ### Getting individual article by heading.
 bbc.shihabhasan.com/heading={heading}. Provide the heading to get the article.
 
 #### Example:
-bbc.shihabhasan.com/heading=Australian top IS recruiter Neil Prakash 'to be extradited'
+bbc.shihabhasan.com/heading=Troubled Toshiba misses annual results deadline
 
 ### Getting individual article by number.
 bbc.shihabhasan.com/n={number}. Provide the number to get the article.
